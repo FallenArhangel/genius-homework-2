@@ -1,0 +1,83 @@
+:root {
+  --main-color: #2b7fff;
+}
+
+/* base */
+
+* {
+  box-sizing: border-box;
+  margin: 3px;
+  padding: 2px;
+  font-style: normal;
+  font-family: 'Roboto';
+}
+
+.container {
+  width: 100%;
+  max-width: 1239px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+.section {
+  padding: 48px 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: var(--main-color);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* header */
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  flex-grow: 1;
+  gap: 240px;
+  justify-content: center;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+/* main */
+/* main_section */
+
+/* on_us */
+/* why_us */
+/* our_procedure */
+/* where_us */
+/* footer */
+/* adress */
