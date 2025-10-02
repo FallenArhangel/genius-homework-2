@@ -1,5 +1,15 @@
 :root {
   --main-color: #2b7fff;
+  --text-color: #ffffff;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2 {
+  font-family: 'Play', sans-serif;
 }
 
 /* base */
@@ -12,11 +22,19 @@
   font-family: 'Roboto';
 }
 
+body {
+  margin: 0;
+}
+
 .container {
   width: 100%;
-  max-width: 1239px;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 0;
+}
+
+.section {
+  padding: 48px 0;
 }
 
 h1,
@@ -31,6 +49,10 @@ p {
 
 .section {
   padding: 48px 0;
+}
+
+.title {
+  color: var(--main-color);
 }
 
 a {
@@ -49,6 +71,7 @@ ul {
 }
 
 /* header */
+
 .header-container {
   display: flex;
   align-items: center;
@@ -58,26 +81,88 @@ ul {
   display: flex;
   flex-grow: 1;
   gap: 240px;
-  justify-content: center;
+  align-items: center;
 }
 
 .nav-list {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
   gap: 56px;
 }
 
-.contact-icon {
+.social {
   display: flex;
   align-items: center;
-  gap: 56px;
+  gap: 32px;
 }
 /* main */
+
 /* main_section */
+.main_section {
+  padding-top: 17px;
+  padding-bottom: 126px;
+  padding-left: 106px;
+}
+
+.text {
+  margin-bottom: 16px;
+}
+
+.beauty_title {
+  font-size: 140px;
+  color: var(--main-color);
+  margin-bottom: 40px;
+}
+
+.call_button {
+  border-radius: 32px;
+  width: 219px;
+  height: 53px;
+  background-color: var(--main-color);
+  color: #ffffff;
+  border: none;
+  margin-bottom: 14px;
+  font-size: 18px;
+  font-weight: 600;
+}
 
 /* on_us */
+
+.on_us_title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
 /* why_us */
+
+.why_us_title {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
 /* our_procedure */
+
+.procedure_title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
 /* where_us */
+
+.where_us_title {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
 /* footer */
-/* adress */
+
+.footer {
+  display: flex;
+  gap: 186px;
+  align-items: flex-start;
+}
+
+.address-list {
+  width: 192px;
+}
