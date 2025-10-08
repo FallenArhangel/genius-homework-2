@@ -18,8 +18,6 @@ h2 {
 
 * {
   box-sizing: border-box;
-  margin: 3px;
-  padding: 2px;
   font-style: normal;
   font-family: 'Roboto';
 }
@@ -153,6 +151,25 @@ ul {
   text-align: center;
 }
 
+.card-list {
+  display: flex;
+  gap: 56px;
+}
+
+.card {
+  justify-content: center;
+  width: 316px;
+  height: 181px;
+  border-radius: 32px;
+}
+
+.card-icon {
+  fill: var(--main-color);
+  width: 48px;
+  height: 48px;
+  margin-bottom: 8px;
+}
+
 /* our_procedure */
 
 .procedure_title {
@@ -169,17 +186,16 @@ ul {
 
 /* footer */
 
+footer {
+  padding: 56px 0;
+  background-color: var(--footer-backgr);
+  color: var(--text-color);
+}
+
 .footer-container {
-  width: 100%;
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 56px 100px;
   display: flex;
   gap: 186px;
   align-items: flex-start;
-  background-color: var(--footer-backgr);
-  color: var(--text-color);
-  flex-shrink: 1;
 }
 
 .footer-nav-list li {
