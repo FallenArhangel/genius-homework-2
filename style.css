@@ -9,9 +9,15 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-h1,
+h1 {
+  font-family: 'Play', sans-serif;
+  font-size: 140px;
+}
+
 h2 {
   font-family: 'Play', sans-serif;
+  font-weight: bold;
+  font-size: 64px;
 }
 
 /* base */
@@ -19,11 +25,11 @@ h2 {
 * {
   box-sizing: border-box;
   font-style: normal;
-  font-family: 'Roboto';
 }
 
 body {
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -120,8 +126,8 @@ ul {
 }
 
 .beauty_title {
-  font-size: 140px;
   color: var(--main-color);
+  font-size: 140px;
   margin-bottom: 40px;
 }
 
@@ -139,9 +145,24 @@ ul {
 
 /* on_us */
 
+.on_us {
+  display: flex;
+}
+
 .on_us_title {
   margin-bottom: 40px;
   text-align: center;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-content {
+  width: 327px;
+  height: 327px;
+  border-radius: 50%;
 }
 
 /* why_us */
