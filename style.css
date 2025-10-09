@@ -201,10 +201,10 @@ ul {
 }
 
 .card {
-  justify-content: center;
   width: 316px;
   height: 181px;
   border-radius: 32px;
+  margin-right: 56px;
 }
 
 .card-icon {
@@ -219,6 +219,11 @@ ul {
 .procedure_title {
   margin-bottom: 40px;
   text-align: center;
+}
+
+.carousel {
+  display: flex;
+  margin-right: 16px;
 }
 
 /* where_us */
