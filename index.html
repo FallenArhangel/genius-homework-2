@@ -46,16 +46,16 @@
             </div>
         </div>
       </nav>
-    </header>
-    <main>
       <section class="section main_section">
         <div class="container">
         <p class="text">Косметологічна клініка</p>
         <h1 class="beauty_title beauty">Beauty <p>Zone</p></h1>
-        <button class="call_button">Замовити дзвінок</button>
+        <button type="button" class="call_button">Замовити дзвінок</button>
         <p>Запишись та отримай безкоштовну консультацію нашого косметолога</p>
         </div>
       </section>
+      </header>
+      <main>
       <section class="section">
         <div class="container on_us">
           <div class="text-container">
@@ -76,24 +76,24 @@
         <div class="container why_us">
           <h2 class="why_us_title">Чому люди <span class="title">обирають нас</span></h2>
           <ul class="card-list">
-            <li>
-              <div class="card">
+            <li class="card-box">
+              <div class="card-content">
                 <svg class="card-icon">
                   <use href="./images/symbol-defs.svg#icon-game-icons_materials-science"></use>
                 </svg>
                 <p>Всі наші косметологи мають вищу медичну освіту та стаж роботи від 5 років</p>
               </div>
             </li>
-            <li>
-              <div class="card">
+            <li class="card-box">
+              <div class="card-content">
                 <svg class="card-icon">
                   <use href="./images/symbol-defs.svg#icon-medicinecosmeticsbottletreatment_109776-1"></use>
                 </svg>
                 <p>Використовуємо тільки професійне обладнання та косметику, перевірену часом</p>
               </div>
             </li>
-            <li>
-              <div class="card">
+            <li class="card-box">
+              <div class="card-content">
                 <svg class="card-icon">
                   <use href="./images/symbol-defs.svg#icon-ph_crown-light"></use>
                 </svg>
@@ -107,9 +107,28 @@
         <div class="container our_procedure">
           <h2 class="procedure_title">Наші <span class="title">процедури</span></h2>
           <div class="carousel">
-            <div class="slide">Маски для обличчя</div>
-            <div class="slide">№</div>
-            <div class="slide">№</div>
+            <button type="button" class="arrow-button">
+              <svg class="arrow-icon">
+                <use href="./images/symbol-defs.svg#icon-Arrow-active-left"></use>
+              </svg>
+            </button>
+            <ul class="carousel-list">
+              <li class="carusel-item">
+                <article class="slide">Маски 
+для обличчя</article>
+              </li>
+              <li class="carusel-item">
+                <article class="slide"></article>
+              </li>
+              <li class="carusel-item">
+                <article class="slide"></article>
+              </li>
+            </ul>
+            <button type="button" class="arrow-button">
+              <svg class="arrow-icon reverse">
+                <use href="./images/symbol-defs.svg#icon-Arrow-active-left"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>

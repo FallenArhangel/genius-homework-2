@@ -9,7 +9,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-h1 {
+h1 {`
   font-family: 'Play', sans-serif;
   font-size: 140px;
 }
@@ -74,9 +74,23 @@ ul {
 
 /* header */
 
+.header {
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.8509),
+    rgba(255, 255, 255, 0.1932),
+    rgba(255, 255, 255, 0)
+  );
+  background-image: url('images/image_header_img.jpg');
+  background-position: right top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .header-container {
   display: flex;
   align-items: center;
+  margin-top: 32px;
 }
 
 .header-nav {
@@ -137,10 +151,15 @@ ul {
   height: 53px;
   background-color: var(--main-color);
   color: var(--text-color);
-  border: none;
+  border-color: var(--main-color);
   margin-bottom: 14px;
   font-size: 18px;
   font-weight: 600;
+}
+
+.call_button:hover {
+  background-color: transparent;
+  color: #2b7fff;
 }
 
 /* on_us */
@@ -197,14 +216,27 @@ ul {
 
 .card-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 56px;
 }
 
-.card {
+.card-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   width: 316px;
   height: 181px;
   border-radius: 32px;
   margin-right: 56px;
+  background-color: #747272;
+}
+
+.card-content {
+  width: 252px;
+  height: 133px;
+  margin: auto;
 }
 
 .card-icon {
@@ -223,7 +255,62 @@ ul {
 
 .carousel {
   display: flex;
-  margin-right: 16px;
+  gap: 32px;
+  align-items: center;
+}
+
+.carousel-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.carousel-item {
+  flex-basis: calc((100% - 40px) / 3);
+}
+
+.slide {
+  width: 344px;
+  height: 456px;
+  border-radius: 120px 4px;
+  background-image: linear-gradient(
+      rgba(1, 28, 68, 0),
+      rgba(1, 28, 68, 0.7258),
+      rgba(1, 28, 68, 1),
+      transparent
+    ),
+    url('images/image_for_slide_1.jpg');
+}
+
+.arrow-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: transparent;
+  width: 44px;
+  height: 44px;
+  border-color: black;
+}
+
+.arrow-icon {
+  fill: #011c44;
+  width: 16px;
+  height: 16px;
+}
+
+.reverse {
+  transform: rotate(180deg);
+}
+
+.arrow-button:hover {
+  background-color: var(--main-color);
+  border-color: var(--text-color);
+}
+
+.arrow-button:hover .arrow-icon {
+  fill: var(--text-color);
 }
 
 /* where_us */
