@@ -274,12 +274,7 @@ ul {
   width: 344px;
   height: 456px;
   border-radius: 120px 4px;
-  background-image: linear-gradient(
-      rgba(1, 28, 68, 0),
-      rgba(1, 28, 68, 0.7258),
-      rgba(1, 28, 68, 1),
-      transparent
-    ),
+  background-image: linear-gradient(to bottom, rgba(1, 28, 68, 0) 40%, rgba(1, 28, 68, 0.73) 80%, #011c44 100%),
     url('images/image_for_slide_1.jpg');
 }
 
